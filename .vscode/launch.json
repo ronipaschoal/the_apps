@@ -1,0 +1,48 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "interfaces",
+            "cwd": "interfaces",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "interfaces (profile mode)",
+            "cwd": "interfaces",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "interfaces (release mode)",
+            "cwd": "interfaces",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "the_vault",
+            "cwd": "the_vault",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "the_vault (profile mode)",
+            "cwd": "the_vault",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "the_vault (release mode)",
+            "cwd": "the_vault",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}

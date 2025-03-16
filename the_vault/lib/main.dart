@@ -9,6 +9,10 @@ class MainApp extends StatelessWidget {
   const MainApp({super.key});
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(title: 'Vault ', home: HomeScreen());
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Vault ',
+      home: HomeScreen(),
+    );
   }
 }

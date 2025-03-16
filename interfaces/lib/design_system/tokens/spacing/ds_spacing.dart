@@ -4,7 +4,7 @@
 ///
 /// Can be used for object [margins], [height], [weight] and [padding].
 ///
-class DsSpacing {
+sealed class DsSpacing {
   /// * xs2 = 4.0,
   static const xs2 = 4.0;
 

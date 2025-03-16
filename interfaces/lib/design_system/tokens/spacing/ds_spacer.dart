@@ -35,7 +35,7 @@ import 'package:interfaces/design_system/tokens/spacing/ds_spacing.dart';
 ///
 /// * [Spacing]
 ///
-class DsSpacer {
+sealed class DsSpacer {
   /// * xs2 = 4.0,
   static const xs2 = SizedBox(width: DsSpacing.xs2, height: DsSpacing.xs2);
 

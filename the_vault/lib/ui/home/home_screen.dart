@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:the_vault/ui/item/item_screen.dart';
+import 'package:the_vault/ui/item_list/cubit/item_list_cubit.dart';
 import 'package:the_vault/ui/item_list/item_list_screen.dart';
 import 'package:the_vault/ui/menu/menu_screen.dart';
 
@@ -144,10 +146,11 @@ class _DestinationViewState extends State<DestinationView> {
           builder: (_) {
             switch (settings.name) {
               case '/':
-                if (widget.destination.title == 'Menu') {
-                  return MenuScreen();
-                }
-                return ItemListScreen();
+                if (widget.destination.title == 'Menu') return MenuScreen();
+                return BlocProvider(
+                  create: (context) => ItemListCubit(context),
+                  child: ItemListScreen(),
+                );
               case '/details':
                 return ItemScreen();
             }
